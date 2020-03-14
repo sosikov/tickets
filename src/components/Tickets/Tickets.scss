@@ -1,7 +1,7 @@
-$breakpoint: 576px;
+@import '../../styles/variables.scss';
 
 .tickets__item {
-  background: #FFFFFF;
+  background: $color-white;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 15px;
@@ -18,7 +18,7 @@ $breakpoint: 576px;
 }
 
 .tickets__price {
-  color: #2196F3;
+  color: $color-lightblue;
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
@@ -57,7 +57,7 @@ $breakpoint: 576px;
   line-height: 14px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #A0B0B9;
+  color: $color-gray;
   display: block;
 
   @media screen and (min-width: $breakpoint) {
@@ -70,7 +70,7 @@ $breakpoint: 576px;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  color: #4A4A4A;
+  color: $color-darkgray;
 
   @media screen and (min-width: $breakpoint) {
     font-size: 14px;
