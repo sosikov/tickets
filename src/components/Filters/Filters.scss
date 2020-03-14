@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.filters {
+  background: $color-white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 0;
+  width: 100%;
+  color: $color-darkgray;
+}
+
+.filters__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.filters__item {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.filters__item:hover {
+  background: $color-hover;
+}
+
+.filters__label {
+  margin-left: 20px;
+  display: flex;
+  cursor: pointer;
+}
+
+.filters__input {
+  position: absolute;
+  display: none;
+}
+
+.filters__input:checked + .filters__checkbox:after {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 10px;
+  border-right: 2px solid #2196F3;
+  border-bottom: 2px solid #2196F3;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%) rotate(45deg);
+  animation: scale 200ms;
+}
+
+.filters__checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $color-lightblue;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.filters__name {
+  font-size: 13px;
+  line-height: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes scale {
+  0% {
+    transform: translateX(-50%) rotate(45deg) scale(0);
+  }
+  85% {
+    transform: translateX(-50%) rotate(45deg) scale(1.05);
+  }
+  100% {
+    transform: translateX(-50%) rotate(45deg) scale(1);
+  }   
+}

@@ -6,7 +6,7 @@ const Tabs = () => {
     <div className='tabs'>
       
       <div className='tabs__item'>
-        <input className='tabs__input' type='radio' name='tab' id='1' value='1'/>
+        <input className='tabs__input' type='radio' name='tab' id='1' value='1' checked/>
         <label className='tabs__label' htmlFor='1'>Самый дешевый</label>
       </div>
       <div className='tabs__item'>
