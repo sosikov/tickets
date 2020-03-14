@@ -45,6 +45,10 @@ $breakpoint: 576px;
 
 .tickets__cell {
   width: 33.33%;
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tickets__label {

@@ -1,9 +1,8 @@
 import React from 'react';
+import Tickets from '../Tickets/Tickets';
 import './App.scss';
 
-import Tickets from '../Tickets/Tickets';
-
-function App() {
+const App = () => {
   return (
     <div>
       <Tickets/>
