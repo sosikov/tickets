@@ -6,11 +6,14 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div>
-      <Tickets/>
-      <Tabs/>
-      <br/>
-      <Filters/>
+    <div className='app__container'>
+      <div className='app__filters'>
+        <Filters/>
+      </div>
+      <div className='app__tickets'>
+        <Tabs/>
+        <Tickets/>
+      </div>
     </div>
   )
 }

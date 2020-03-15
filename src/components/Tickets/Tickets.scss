@@ -5,10 +5,11 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $phone) {
     padding: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -23,7 +24,7 @@
   font-size: 20px;
   line-height: 20px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $phone) {
     line-height: 24px;
     font-size: 24px;
   }
@@ -38,7 +39,7 @@
   display: block;
   height: 8px;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $phone) {
     height: 10px;
   }
 }
@@ -60,7 +61,7 @@
   color: $color-gray;
   display: block;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $phone) {
     font-size: 12px;
     line-height: 18px;
   }
@@ -72,7 +73,7 @@
   line-height: 18px;
   color: $color-darkgray;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $phone) {
     font-size: 14px;
     line-height: 21px;
   }

@@ -15,7 +15,7 @@ const Filters = () => {
       </div>
       <div className='filters__item'>
         <label className='filters__label'>
-          <input className='filters__input' type='checkbox'/>
+          <input className='filters__input' type='checkbox' checked/>
           <div className='filters__checkbox'></div>
           <span className='filters__name'>Без пересадок</span>
         </label>
