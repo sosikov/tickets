@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+
+  @media (min-width: $phone) {
+    margin: 50px 0;
+  }
+}
+
+.logo__image {
+  transition: transform 200ms;
+  cursor: pointer;
+}
+
+.logo__image:hover {
+  transform: scale(1.2) rotate(15deg);
+  transition: transform 300ms;
+}
