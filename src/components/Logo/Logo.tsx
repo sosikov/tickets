@@ -1,12 +1,17 @@
 import React from 'react';
 import './Logo.scss';
+import { REPOSITORY_URL } from '../../utils/api';
 
-const Logo = () => {
+const Logo = React.memo(() => {
   console.log(`#render Logo`);
+
+  const openRepository = () => {
+    window.open(REPOSITORY_URL, '_blank');
+  }
 
   return (
     <div className='logo'>
-      <svg className='logo__image' width='82' height='89' viewBox='0 0 82 89' fill='none' xmlns='http://www.w3.org/2000/svg'>
+      <svg className='logo__image' width='82' height='89' viewBox='0 0 82 89' fill='none' xmlns='http://www.w3.org/2000/svg' onClick={openRepository}>
         <g filter='url(#filter0_d)'>
           <path fillRule='evenodd' clipRule='evenodd' d='M41 70C53.1503 70 63 60.1503 63 48C63 35.8497 53.1503 26 41 26C28.8497 26 19 35.8497 19 48C19 60.1503 28.8497 70 41 70Z' fill='black' fillOpacity='0.01' />
         </g>
@@ -57,6 +62,6 @@ const Logo = () => {
       </svg>
     </div>
   )
-}
+});
 
 export default Logo;

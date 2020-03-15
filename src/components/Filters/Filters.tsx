@@ -1,7 +1,7 @@
 import React from 'react';
 import './Filters.scss';
 
-const Filters = () => {
+const Filters = React.memo(() => {
   console.log(`#render Filters`);
 
   return (
@@ -17,7 +17,7 @@ const Filters = () => {
       </div>
       <div className='filters__item'>
         <label className='filters__label'>
-          <input className='filters__input' type='checkbox' checked/>
+          <input className='filters__input' type='checkbox'/>
           <div className='filters__checkbox'></div>
           <span className='filters__name'>Без пересадок</span>
         </label>
@@ -46,6 +46,6 @@ const Filters = () => {
 
     </div>
   )
-}
+});
 
 export default Filters;
