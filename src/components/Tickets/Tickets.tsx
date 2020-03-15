@@ -13,7 +13,7 @@ const Tickets = () => {
               <td><img className='tickets__logo' src='//pics.avs.io/99/36/TG.png' alt='TG'/></td>
             </tr>
           </thead>
-          <tbody className='table__body'>
+          <tbody className='tickets__table-body'>
             <tr className='tickets__row'>
               <td className='tickets__cell'>
                 <span className='tickets__label'>MOW – HKT</span>
@@ -29,7 +29,7 @@ const Tickets = () => {
               </td>
             </tr>
           </tbody>
-          <tbody className='table__body'>
+          <tbody className='tickets__table-body'>
             <tr className='tickets__row'>
               <td className='tickets__cell'>
                 <span className='tickets__label'>MOW – HKT</span>

@@ -22,8 +22,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
-  @media screen and (min-width: $breakpoint) {
+  @media (min-width: $tablet) {
     padding: 14px 0;
     font-size: 12px;
     line-height: 20px;
