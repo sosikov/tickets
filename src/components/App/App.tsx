@@ -6,6 +6,8 @@ import Logo from '../Logo/Logo';
 import './App.scss';
 
 const App = () => {
+  console.log(`#render App`);
+  
   return (
     <div className='app_root'>
       <Logo/>

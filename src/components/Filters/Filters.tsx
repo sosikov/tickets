@@ -2,6 +2,8 @@ import React from 'react';
 import './Filters.scss';
 
 const Filters = () => {
+  console.log(`#render Filters`);
+
   return (
     <div className='filters'>
       <span className='filters__title'>Количество пересадок</span>

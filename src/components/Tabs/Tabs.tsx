@@ -2,6 +2,8 @@ import React from 'react';
 import './Tabs.scss';
 
 const Tabs = () => {
+  console.log(`#render Tabs`);
+
   return (
     <div className='tabs'>
       

@@ -2,6 +2,8 @@ import React from 'react';
 import './Tickets.scss';
 
 const Tickets = () => {
+  console.log(`#render Tickets`);
+
   return (
     <div className='tickets'>
 
